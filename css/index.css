@@ -174,12 +174,11 @@ img {
   margin: 0 auto;
 }
 .navigation-bar .inner-box {
-  width: 80%;
-  margin: 2rem auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /*couldnt get Flex mixin to work*/
+  width: 80%;
+  margin: 2rem auto;
 }
 .navigation-bar a {
   text-decoration: none;
