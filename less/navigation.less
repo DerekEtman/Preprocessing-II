@@ -1,1 +1,24 @@
 // Navigation Styles here
+
+.navigation-bar{
+    border-bottom: 1px dashed black;
+    width:100%;
+    margin: 0 auto;
+
+    .inner-box{
+        width:80%;
+        margin:2rem auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        /*couldnt get Flex mixin to work*/
+
+    }
+
+    a{
+        .style-clear();
+        padding:0 1rem;
+    }
+
+}

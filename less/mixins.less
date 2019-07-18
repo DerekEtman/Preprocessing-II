@@ -1,1 +1,14 @@
 // Mixins in here
+
+.style-clear() {
+    text-decoration: none;
+    font-family:inherit;
+    color:@font-color;
+    font-size:1.5rem;
+}
+
+.flexBetween(@justify, @align) {
+    display:flex;
+    justify-content: @justify;
+    align-items: @align;
+}
