@@ -1,27 +1,42 @@
 // Navigation Styles here
 
-.navigation-bar{
+.navigation-bar {
     .sectionBorder();
-    width:100%;
+    width: 100%;
     margin: 0 auto;
 
-    .inner-box{
+    .inner-box {
         .flexBetween(space-between, center);
 
-        width:80%;
-        margin:2rem auto;
+        width: 60%;
+        margin: 2rem auto;
 
     }
 
-    a{
+    a {
         .style-clear();
+
+        /* test Animation*/
+        .slideInKey(fade-in;{
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+            });
+
+        .slideInAnimation(fade-in 0.2s linear infinite alternate);
+
         padding:0 1rem;
     }
 
-    @media @mobile{
+    @media @mobile {
 
-        .inner-box{
+        .inner-box {
             .columnNav();
+        }
+    }
+
+    @media @tablet {
+        .inner-box {
+            .tabletNav();
         }
     }
 }
